@@ -1,6 +1,7 @@
 <html>
-  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+
 <body>
+  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 <h1 align="center"> 
   Desarrollo web entornos servidor
 </h1>
