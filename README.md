@@ -1,7 +1,13 @@
+<html>
 <body>
-<h1>
-  Desarrollo web enotrnos servidor
+<h1 align="center"> 
+  Desarrollo web entornos servidor
 </h1>
 
-  <img src="https://www.caloryfrio.com/images/articulos/Frio-refrigeracion/Refrigeracion-salas-servidores.webp"/>
+<em>  </em> <br>
+
+
+
+  <img src="https://www.arsys.es/blog/file/uploads/2018/03/Eb_22_3.jpg" />
 </body>
+</html>
