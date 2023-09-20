@@ -7,8 +7,7 @@
   
 ![Servidores](https://github.com/eliasmm04/DWES/assets/145007495/aeea4afc-71f7-4d6b-9d70-113ecf00abdd)
 
- ![descripción de la imágen](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)   ![Static Badge](https://img.shields.io/badge/Debian-red)  ![Static Badge](https://img.shields.io/badge/VirtualBox-grey)
-  ![Static Badge](https://img.shields.io/badge/Git-orange)
+ ![descripción de la imágen](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)   ![Static Badge](https://img.shields.io/badge/Debian-red)  ![Static Badge](https://img.shields.io/badge/Git-orange)   ![Static Badge](https://img.shields.io/badge/VirtualBox-grey)
 
 
 
