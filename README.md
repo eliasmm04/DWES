@@ -10,11 +10,11 @@
  ![descripción de la imágen](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 <h2>Indice</h2>
--Descripción del Proyecto
--Características de la aplicación y demostración
--Fucionalidades
--Tecnologías
--Contribuidores
+-Descripción del Proyecto<br>
+-Características de la aplicación y demostración<br>
+-Fucionalidades<br>
+-Tecnologías<br>
+-Contribuidores<br>
 
 <h3>Descripción del Proyecto</h3>
 
