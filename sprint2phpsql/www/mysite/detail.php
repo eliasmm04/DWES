@@ -38,7 +38,7 @@ echo '<p>' . $game_data['precio'] . ' € </p>';
     $query_comments = 'SELECT * FROM tComentarios WHERE juego_id=' . $juego_id;
     $result_comments = mysqli_query($db, $query_comments) or die('Query error');
     while ($comment_row = mysqli_fetch_array($result_comments)) {
-        echo '<li>' . $comment_row['comentario'] . '</li>';
+        echo '<li>' . $comment_row['comentario'] . " fecha: " .$comment_row['fecha_comentario']  .'</li>';
     }
     mysqli_close($db);
     ?>

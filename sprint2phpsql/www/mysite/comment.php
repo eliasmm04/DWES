@@ -6,7 +6,7 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 <?php
     $juego_id = $_POST['id'];
     $comentario = $_POST['new_comment'];
-    $query = "INSERT INTO tComentarios (comentario, usuario_id, juego_id) VALUES ('" .$comentario. "' ,NULL, " . $juego_id . ")" ;
+    $query = "INSERT INTO tComentarios (comentario, usuario_id, juego_id,fecha_comentario) VALUES ('" .$comentario. "' ,NULL, " . $juego_id . ",CURDATE())" ;
     mysqli_query ($db, $query) or die('Error');
     echo "<p>Nuevo comentario ";
     echo mysqli_insert_id($db) ;
