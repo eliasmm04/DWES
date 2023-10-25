@@ -18,20 +18,19 @@ if (!isset($_GET['id'])) {
 }
 
 $juego_id = $_GET ['id'];
-echo $juego_id;
 $query = 'SELECT * FROM tJuegos WHERE id=' . $juego_id;
 $result = mysqli_query($db, $query) or die('Query error');
 $game_data = mysqli_fetch_array($result);
 echo '<img src="' . $game_data['url_imagen'] . '" id="game-image"/>';
 echo '<h1>' . $game_data['nombre'] . '</h1>';
 echo '<p>' . $game_data['empresa'] . '</p>';
-echo '<p>' . $game_data['precio'] . '</p>';
+echo '<p>' . $game_data['precio'] . ' € </p>';
 ?>
 
 <h3>Comentarios:</h3>
-<form action ="/comment.php" method="post">
+<form action ="/comment.php" method="POST">
 	<textarea rows="4" cols="50" name="new_comment"></textarea><br>
-	<input type="hidden" name="cancion_id" value="<?php echo $cancion_id; ?>">
+	<input type="hidden" name="id" value="<?php echo $juego_id; ?>">
 	<input type="submit" value="Comentar">
 </form>
 <ul>
