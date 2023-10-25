@@ -61,7 +61,7 @@ $result=mysqli_query($db, $query) or die ('Query error');
 while ($row = mysqli_fetch_array($result)){
 echo '<tr>';
 echo '<td>' . $row['id'] . '</td>';
-echo '<td><a href="/detail.php?id=' . $row['id'] . '">'. $row['nombre'] . '</a></td>';
+echo '<td><a href="detail.php?id=' . $row['id'] . '">'. $row['nombre'] . '</a></td>';
 echo '<td><img src="' .$row['url_imagen'] . '" class="game-image"></td>';
 echo '<td>' . $row['empresa'] . '</td>';
 echo '<td>' . $row['precio'] . '€ ' .  '</td>';
