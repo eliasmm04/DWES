@@ -27,12 +27,13 @@ CREATE TABLE `tComentarios` (
   `comentario` varchar(2000) DEFAULT NULL,
   `usuario_id` int(11) DEFAULT NULL,
   `juego_id` int(11) NOT NULL,
+  `fecha_comentario` date DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `juego_id` (`juego_id`),
   KEY `usuario_id` (`usuario_id`),
   CONSTRAINT `tComentarios_ibfk_1` FOREIGN KEY (`juego_id`) REFERENCES `tJuegos` (`id`),
   CONSTRAINT `tComentarios_ibfk_2` FOREIGN KEY (`usuario_id`) REFERENCES `tUsuarios` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,11 +43,12 @@ CREATE TABLE `tComentarios` (
 LOCK TABLES `tComentarios` WRITE;
 /*!40000 ALTER TABLE `tComentarios` DISABLE KEYS */;
 INSERT INTO `tComentarios` VALUES
-(1,'¡Gran juego!',1,1),
-(2,'Me encanta este juego.',2,2),
-(3,'Buena experiencia de juego.',3,3),
-(4,'Altamente recomendado.',4,4),
-(5,'Excelente trabajo del desarrollador.',5,5);
+(1,'¡Gran juego!',1,1,'2023-10-25'),
+(2,'Me encanta este juego.',2,2,'2023-10-25'),
+(3,'Buena experiencia de juego.',3,3,'2023-10-25'),
+(4,'Altamente recomendado.',4,4,'2023-10-25'),
+(5,'Excelente trabajo del desarrollador.',5,5,'2023-10-25'),
+(6,'siisis',NULL,2,'2023-10-25');
 /*!40000 ALTER TABLE `tComentarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,4 +126,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-19 10:49:31
+-- Dump completed on 2023-10-25 23:23:31
