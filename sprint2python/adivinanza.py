@@ -1,44 +1,61 @@
-import random
+print("Adivina adivinanza, Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.")
+puntuacion = 0
+opciones = {
+'a1': "a: Manzana",
+'b1': "b: Sandía",
+'c1': "c: Pera",
+'op1':'a',
+'op2':'b',
+'op3':'a',
+'a2':'a: Pescado',
+'b2':'b: Pájaro',
+'c2':'c: Plátano',
+'a3':'a: Globo',
+'b3':'b: Cometa',
+'c3':'c: Avión'
+}
 
-def mostrar_adivinanza(adivinanza, opciones, respuesta_correcta):
-    print(adivinanza)
-    for opcion in opciones:
-        print(opcion)
+print(opciones['a1'])
+print(opciones['b1'])
+print(opciones['c1'])
 
-    respuesta_usuario = input("¿Cuál es tu respuesta? (a, b o c): ")
+opcionR = input()
 
-    if respuesta_usuario.lower() == respuesta_correcta:
-        print("¡Correcto! Ganaste 10 puntos.")
-        return 10
-    else:
-        print(f"In correcto. La respuesta correcta es {respuesta_correcta.upper()}. Perdiste 5 puntos.")
-        return -5
+if opcionR == opciones['op1']:
+    print("Opción correcta")
+    puntuacion = puntuacion + 10
+else:
+    print("Opción incorrecta")
+    puntuacion = puntuacion + 5
 
-def main():
-    adivinanzas = [
-        {
-            'adivinanza': "Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.",
-            'opciones': ['a) Manzana', 'b) Sandía', 'c) Pera'],
-            'respuesta_correcta': 'a'
-        },
-        {
-            'adivinanza': "Tiene ojos pero no puede ver. Tiene una pata pero no puede caminar. ¿Qué es?",
-            'opciones': ['a) Pescado', 'b) Pájaro', 'c) Plátano'],
-            'respuesta_correcta': 'b'
-        },
-        {
-            'adivinanza': "Aunque me aprietes y me tires al suelo, siempre vuelvo a subir al cielo. ¿Qué soy?",
-            'opciones': ['a) Globo', 'b) Cometa', 'c) Avión'],
-            'respuesta_correcta': 'a'
-        }
-    ]
+print('Tiene ojos pero no puede ver. Tiene una pata pero no puede caminar. ¿Qué es?')
 
-    puntaje = 0
+print(opciones['a2'])
+print(opciones['b2'])
+print(opciones['c2'])
 
-    for adivinanza in adivinanzas:
-        puntaje += mostrar_adivinanza(adivinanza['adivinanza'], adivinanza['opciones'], adivinanza['respuesta_correcta'])
+opcionR = input()
 
-    print(f"Tu puntuación final es: {puntaje} puntos.")
+if opcionR == opciones['op2']:
+    print("Opción correcta")
+    puntuacion = puntuacion + 10
+else:
+    print("Opción incorrecta")
+    puntuacion = puntuacion + 5
 
-if __name__ == "__main__":
-    main()
+print("Aunque me aprietes y me tires al suelo, siempre vuelvo a subir al cielo. ¿Qué soy?")
+
+print(opciones['a3'])
+print(opciones['b3'])
+print(opciones['c3'])
+
+opcionR = input()
+
+if opcionR == opciones['op1']:
+    print("Opción correcta")
+    puntuacion = puntuacion + 10
+else:
+    print("Opción incorrecta")
+    puntuacion = puntuacion + 5
+
+print("Puntuación: ",puntuacion)
