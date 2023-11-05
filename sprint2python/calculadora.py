@@ -1,4 +1,4 @@
-from ej3 import suma, resta, multiplicacion, division
+from operaciones import suma, resta, multiplicacion, division
 
 while True:
     try:
