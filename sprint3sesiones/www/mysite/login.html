@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <script>
+        function validarInicioSesion() {
+            var email = document.getElementById('f_email').value;
+            var password = document.getElementById('f_password').value;
+
+            if (email.trim() === '' || password.trim() === '') {
+                alert('Por favor, completa todos los campos.');
+                return false; // Evita que el formulario se envíe si hay campos vacíos
+            }
+            return true; // Envía el formulario si no hay campos vacíos
+        }
+    </script>
 </head>
 <body>
     <h1>Login</h1>
-    <form action="login.php" method="post">
-        <input name="f_email" type="text" placeholder="e-mail"><br>
-        <input name="f_password" type="password" placeholder="Contraseña"><br>
+    <form action="login.php" method="post" onsubmit="return validarInicioSesion()">
+        <input id="f_email" name="f_email" type="text" placeholder="e-mail"><br>
+        <input id="f_password" name="f_password" type="password" placeholder="Contraseña"><br>
         <input type="submit" value="Iniciar sesión">
     </form>
 </body>
