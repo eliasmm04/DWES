@@ -5,6 +5,18 @@
 <head>
 
 <style>
+.game-item {
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .game-item:hover {
+            opacity: 0.5; 
+        }
+
+
+
+
 h1{
 font-size :34px;
 font-family: Arial Black, Gadget, sans-serif;
@@ -59,8 +71,8 @@ $query = 'SELECT * FROM tJuegos';
 $result=mysqli_query($db, $query) or die ('Query error');
 //Recorrer el resultado
 while ($row = mysqli_fetch_array($result)){
-echo '<tr>';
-echo '<td>' . $row['id'] . '</td>';
+echo '<tr class="game-item">';
+echo '<td class="game-item">' . $row['id'] . '</td>';
 echo '<td><a href="detail.php?id=' . $row['id'] . '">'. $row['nombre'] . '</a></td>';
 echo '<td><img src="' .$row['url_imagen'] . '" class="game-image"></td>';
 echo '<td>' . $row['empresa'] . '</td>';
