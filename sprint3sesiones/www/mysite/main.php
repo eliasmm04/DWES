@@ -82,8 +82,11 @@ mysqli_close($db);
 ?>
 </table>
 
-
+<a href="register.html">Registrarse</a>
+<a href="login.html">Iniciar sesion</a>
 <a href="logout.php">Cerrar sesión</a>
+<a href="cambiocontrasena.html">Cambio de contraseña</a>
+
 </body>
 
 </html>
