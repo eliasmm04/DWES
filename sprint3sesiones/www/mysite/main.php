@@ -69,6 +69,9 @@ echo '<td>' . $row['precio'] . '€ ' .  '</td>';
 mysqli_close($db);
 ?>
 </table>
+
+
+<a href="logout.php">Cerrar sesión</a>
 </body>
 
 </html>

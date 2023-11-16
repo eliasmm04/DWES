@@ -43,5 +43,6 @@ echo '<p>' . $game_data['precio'] . ' € </p>';
     mysqli_close($db);
     ?>
 </ul>
+<a href="logout.php">Cerrar sesión</a>
 </body>
 </html>
